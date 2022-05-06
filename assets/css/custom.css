@@ -1,0 +1,136 @@
+body {
+    background-image: url('../img/bg.jpg');
+    background-attachment: fixed;
+}
+
+button {
+    transition-duration: .3s;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card-inicial {
+    border: 1px solid #333;
+    width: 400px;
+    display: block;
+    margin: auto;
+    padding: 0;
+    background-color: white;
+    box-shadow: 2px 2px 3px #333;
+}
+
+.card-final {
+    border: 1px solid #333;
+    width: 600px;
+    display: block;
+    margin: auto;
+    padding: 0;
+    background-color: white;
+    box-shadow: 2px 2px 3px #333;
+}
+
+.img-inicial {
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.thumbnail {
+    width: 100%;
+    background-color: rgba(132, 151, 171, .7);
+    padding: 10px 0;
+}
+
+.text {
+    padding: 15px;
+}
+
+.btn {
+    border: 1px solid #333;
+    min-width: 100px;
+    display: block;
+    margin: 10px auto;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+.card-pergunta {
+    width: 70vw;    
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 2px 2px 3px #333;
+    position: relative;
+    background-color: white;
+}
+
+.enunciado {
+    font-size: 20px;
+}
+
+.r-c {
+    position: relative;
+}
+
+.feedback {
+    padding: 0 16px;
+    font-size: 16px;
+    
+}
+
+.feedback p {
+    margin: 0;    
+}
+
+.errado {    
+    color: rgb(250, 20, 20);
+}
+
+.correto {
+    color: rgb(0, 170, 0);
+    
+}
+
+.resposta {
+    margin: 5px auto;
+    border: none;
+    padding: 10px 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.clicado {
+    pointer-events: none;
+    opacity: .7;
+}
+
+.footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: end;
+    height: 50px;
+}
+
+.footer button {
+    margin: 5px;
+}
+
+#pergunta-3 .enunciado {
+    font-size: 18px;
+}
+
+@media (max-width:650px){
+    .card-pergunta,
+    .card-inicial,
+    .card-final {
+        width: unset;
+    }
+}

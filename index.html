@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Ténico em Desenvolvimento de Sistemas</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/sncload.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+    <div id='sncloader' class='over-loader'><div class="over-cell"><div id="sncload"></div></div></div>
+    <div class="container-fluid">
+        
+        <div class="card-inicial">
+            <div class="thumbnail"><img src="assets/img/011-storage.png" alt="" class="img-inicial"></div>
+            <div class="text">
+                <h1>Quiz - Tecnico em desenvolvimento de Sistemas UC3</h1>
+                <p>Agora que já vimos este material, vamos a um pequeno quiz para reforçar nossos conhecimentos.<br>
+                Lembramos que este quiz não tem valor avaliativo.</p>
+                <button class="btn" id="iniciar">Iniciar</button>
+            </div>
+        </div>
+        <div class="card-pergunta" id="pergunta-1">
+            <!-- <h2>Questão 1:</h2> -->
+            <p class="enunciado">
+                1. Sabendo que uma das principais funcionalidades do sistema será a manutenção de vendas de pacotes de viagem, qual seria a melhor abordagem inicial para extrair requisitos relativos a tal funcionalidade? 
+            </p>
+            <div class="r-c">
+                <button class="resposta resposta-1">
+                    a) Brainstorming com a equipe, para que todos opinem sobre como as vendas os afetam e como o sistema poderia considerá-las. 
+                </button>
+                <div class="feedback feedback-1 errado">
+                
+                    <p>O brainstorming seria mais adequado quando se tem uma ideia mais vaga sobre o software. No caso, está sendo abordada uma funcionalidade específica que precisa ser detalhada.</p>
+                </div>
+            </div>
+            
+            <div class="r-c">
+                <button class="resposta resposta-2">
+                    b) Entrevista com o gerente, o qual dará um panorama completo da empresa e de onde as vendas se encaixam. 
+                </button>
+                <div class="feedback feedback-2 errado">
+                    
+                    <p>O gerente pode complementar as informações, mas não está diretamente envolvido no cotidiano de orçamentos e vendas e pode acabar, assim, omitindo algum detalhe.</p>
+                </div>
+            </div>
+            <div class="r-c">
+                <button class="resposta resposta-3">
+                    c) Conversa com os vendedores, questionando a rotina deles e deduzindo as operações que o sistema deverá realizar para atendê-los. 
+                </button>
+                <div class="feedback feedback-3 correto">
+                    
+                    <p>Parabéns! Você acertou. A conversa com os vendedores é o melhor ponto de partida, pois, dessa forma, são obtidos relatos sobre rotinas e dificuldades pelas quais os vendedores passam, possibilitando mapear as necessidades diretas desses usuários. A conversa pode ser complementada com entrevistas com o restante da equipe.</p>
+                </div>
+            </div>
+            <div class="r-c">
+                <button class="resposta resposta-4">
+                    d) Questionário com toda a equipe, para que todos apontem como as vendas são realizadas. Assim, a equipe de desenvolvimento poderá comparar as diferentes versões do assunto e obter a melhor solução para o software. 
+                </button>
+                <div class="feedback feedback-4 errado">
+                    
+                    <p>As versões conflitantes e pouco detalhadas que provavelmente viriam desses questionários poderiam deixar mais confusa a percepção sobre o que o sistema deverá fazer.</p>
+                </div>
+            </div>
+            <div class="footer">
+                <button id="continua-1" class="btn continuar">Continuar</button>
+            </div>
+        </div>
+        <div class="card-pergunta" id="pergunta-2">
+            <p class="enunciado">
+                2. Iniciando a entrevista com os atendentes, escolha a melhor primeira pergunta a ser aplicada a eles:  
+            </p>
+            <div class="r-c">
+                <button class="resposta resposta-1">
+                    a)     “Pode nos informar, por favor, quantas vendas vocês fazem por dia?”.  
+                </button>
+                <div class="feedback feedback-1 errado">
+                
+                    <p>A resposta, provavelmente, seria parecida com esta: “Fazemos em torno de dez vendas por dia”. Logo, a pergunta desta alternativa não ajuda a descobrir requisitos do sistema.</p>
+                </div>
+            </div>
+            
+            <div class="r-c">
+                <button class="resposta resposta-2">
+                    b) "Gostaríamos de entender o processo de venda de um pacote de viagem. O que acontece desde quando o cliente chega aqui e é atendido até o momento em que ele fecha negócio?”.
+                </button>
+                <div class="feedback feedback-2 correto">
+                    
+                    <p>Parabéns! Você acertou. A resposta, provavelmente, seria parecida com esta: “Bem, o cliente chega, diz as necessidades dele e nós damos opções. Logo após montamos um orçamento que, se o cliente aceitar, acaba se tornando a venda, que é faturada. As notas fiscais são emitidas e todos os demais trâmites são realizados”. Sendo assim, a pergunta desta alternativa pode revelar detalhes que, a princípio, não estavam evidentes, especialmente sobre o processo de orçamentos.</p>
+                </div>
+            </div>
+            <div class="r-c">
+                <button class="resposta resposta-3">
+                    c) “Por gentileza, para entendermos melhor o processo e implementá-lo no sistema, você pode nos informar como acontece a venda?”. 
+                </button>
+                <div class="feedback feedback-3 errado">
+                    
+                    <p>A resposta, provavelmente, seria parecida com esta: “OK! Na venda nós utilizamos essa planilha aqui, registramos os valores que foram passados ao cliente e depois avisamos o setor financeiro”. A pergunta desta alternativa é válida, mas pode fazer com que o cliente vá direto ao assunto, omitindo alguns processos. Talvez ela seja mais interessante em um momento posterior, no qual se quer detalhar passos específicos do processo. </p>
+                </div>
+            </div>
+            <div class="r-c">
+                <button class="resposta resposta-4">
+                    d) “Para iniciarmos, seria interessante saber se o processo de vendas precisará utilizar banco de dados e se necessitará de conexões com webservices para enviar nota fiscal. Poderia nos auxiliar informando detalhes do processo?”. 
+                </button>
+                <div class="feedback feedback-4 errado">
+                    
+                    <p>A resposta, provavelmente, seria parecida com esta: “Bom, sinceramente não entendi o que você disse”. Salvo se o cliente for da área da tecnologia, deve-se evitar utilizar termos técnicos que, no fundo, não interessam a ele – o que interessa é a funcionalidade do sistema.</p>
+                </div>
+            </div>
+            <div class="footer">
+                <button id="continua-2" class="btn continuar">Continuar</button>
+            </div>
+        </div>
+        <div class="card-pergunta" id="pergunta-3">
+            <p class="enunciado">
+                3. Fazendo a pergunta certa, várias possibilidades foram abertas pela resposta do atendente. Uma que não havia sido prevista é que o sistema terá que fazer um controle de orçamentos. Você pede detalhes ao atendente e ele lhe dá algumas opções que podem ser úteis para entender o processo. Assinale a alternativa que traz uma informação ou um recurso revelado pelo atendente que, a princípio, não traz uma utilidade direta para o entendimento de requisitos dos orçamentos:   
+            </p>
+            <div class="r-c">
+                <button class="resposta resposta-1">
+                    a)         Documentos impressos de orçamento que são emitidos para o cliente. Os atendentes utilizam software de edição de texto e, baseados em modelos, preenchem os dados do orçamento. 
+                </button>
+                <div class="feedback feedback-1 errado">
+                
+                    <p>O orçamento impresso não só traz informações valiosas sobre os dados que o sistema precisa manipular e manter como também evidencia a necessidade de haver uma maneira de cadastrar um orçamento e imprimi-lo diretamente do cadastro, eliminando a redação manual via editor de texto.</p>
+                </div>
+            </div>
+            
+            <div class="r-c">
+                <button class="resposta resposta-2">
+                    b)     Pasta na nuvem que guarda os orçamentos. Os atendentes relatam que, em certa ocasião, perderam um cliente por simplesmente não encontrarem o arquivo de cotação fornecido a ele. Há certo padrão de nomenclatura nos arquivos, mas não é totalmente respeitado. 
+                </button>
+                <div class="feedback feedback-2 errado">
+                    
+                    <p>A pasta evidencia a desorganização pela qual a empresa passa hoje, trazendo indícios de que o sistema precisará de meios simples de buscar um orçamento emitido, permitindo ordenações e filtros.</p>
+                </div>
+            </div>
+            <div class="r-c">
+                <button class="resposta resposta-3">
+                    c)    Planilha com os orçamentos convertidos em venda. A planilha de orçamentos convertidos em vendas, que traz observações e dados de negociação que vão do orçamento para a venda, é importante para que o gerente estabeleça as comissões dos atendentes. 
+                </button>
+                <div class="feedback feedback-3 errado">
+                    
+                    <p>As informações sobre a conversão de um orçamento ajudam a apontar o fim do ciclo de vida de um orçamento e também a detectar informações que o sistema terá que armazenar em banco de dados e com as quais terá que lidar, além de regras de negócio.</p>
+                </div>
+            </div>
+            <div class="r-c">
+                <button class="resposta resposta-4">
+                    d)    Notas fiscais eletrônicas geradas pelas vendas. Pode-se assim confrontar o valor final fornecido ao cliente com o valor que foi passado via orçamento. 
+                </button>
+                <div class="feedback feedback-4 correto">
+                    
+                    <p>As questões de valores poderiam ser obtidas com mais rigor por meio da planilha de conversões de orçamentos em vendas. As notas fiscais dizem pouco sobre o processo de orçamento.</p>
+                </div>
+            </div>
+            <div class="footer">
+                <button id="continua-3" class="btn continuar">Continuar</button>
+            </div>
+        </div>
+        <div class="card-pergunta" id="pergunta-4">
+            <p class="enunciado">
+                4. Focando a questão dos orçamentos, após o trabalho de levantamento realizado, o que é possível considerar como requisitos?
+            </p>
+            <div class="r-c">
+                <button class="resposta resposta-1">
+                    a)    Manter orçamentos (incluir, editar, excluir, buscar); emitir relatório de orçamento para o cliente; realizar venda com base em um orçamento, permitindo ajustes de negociação; e manter histórico de alteração nos registros de orçamento, indicando o usuário que realizou a mudança. 
+                </button>
+                <div class="feedback feedback-1 correto">
+                
+                    <p>Parabéns! São todos requisitos válidos, podendo haver outros ainda a serem descobertos consultando gerente e outros setores.</p>
+                </div>
+            </div>
+            
+            <div class="r-c">
+                <button class="resposta resposta-2">
+                    b)     Manter orçamentos (incluir, editar, excluir, buscar); enviar orçamento ao e-mail do cliente automaticamente; e realizar venda com base em um orçamento, permitindo ajustes de negociação. 
+                </button>
+                <div class="feedback feedback-2 errado">
+                    
+                    <p>Não está clara, com base no levantamento de requisitos, a necessidade de envio automático de e-mails. </p>
+                </div>
+            </div>
+            <div class="r-c">
+                <button class="resposta resposta-3">
+                    c)     Manter orçamentos (incluir, editar, excluir, buscar); emitir relatório de orçamento para o cliente; e copiar dados do orçamento para o cadastro de vendas. 
+                </button>
+                <div class="feedback feedback-3 errado">
+                    
+                    <p>Copiar dados do orçamento para o cadastro de vendas parece ser uma solução burocrática para o que poderia ser, simplesmente, a criação de uma nova venda a partir de um orçamento. </p>
+                </div>
+            </div>
+            <div class="r-c">
+                <button class="resposta resposta-4">
+                    d) Manter orçamentos (incluir, editar, excluir, buscar); emitir relatório de orçamento para o cliente; realizar venda com base em um orçamento, permitindo ajustes de negociação; e registrar comissão do atendente.
+                </button>
+                <div class="feedback feedback-4 errado">
+                    
+                    <p>A comissão do atendente não faz parte do processo de orçamentos. Além disso, questões de recursos humanos estão fora do escopo do sistema. </p>
+                </div>
+            </div>
+            <div class="footer">
+                <button id="continua-4" class="btn continuar">Finalizar</button>
+            </div>
+        </div>
+        <div class="card-final">
+            <div class="thumbnail"><img src="assets/img/006-chatbot.png" alt="" class="img-inicial"></div>
+            <div class="text">
+                <h2>Parabéns!</h2>
+                <p>Com a conclusão deste quiz, lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rem reprehenderit nam inventore, ipsa ipsum dolor repudiandae saepe consequuntur alias? Nesciunt similique perspiciatis quis obcaecati modi reprehenderit laborum cum blanditiis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet possimus inventore velit fuga blanditiis alias dolore ratione quae ab ducimus soluta excepturi consectetur repudiandae, sunt amet perspiciatis tempora error cupiditate?</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/scripts.js"></script>
+</html>
